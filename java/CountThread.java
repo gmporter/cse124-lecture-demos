@@ -24,6 +24,8 @@ public class CountThread extends Thread {
 	public static void main(String[] args) {
 		Thread t1 = new CountThread(1);
 		Thread t2 = new CountThread(2);
-		t1.start(); t2.start();
+		Thread t3 = new CountThread(3);
+		Thread t4 = new CountThread(4);
+		t1.start(); t2.start(); t3.start(); t4.start();
 	}
 }
